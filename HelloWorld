@@ -1,0 +1,15 @@
+//@henrylindblom 1/30/19
+/*
+ * this is a multiline comment
+ * hitting enter adds more lines to the comment
+ */
+/**
+ * this is called a java doc comment and it goes into an html page when published
+ */
+public class HelloWorld
+{
+    public static void main(String[] args)//this is an inline comment
+    {
+        System.out.println("Hello World");//this prints the text in quotes
+    }
+}
