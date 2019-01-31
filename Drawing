@@ -1,0 +1,15 @@
+
+/**
+ * Write a description of your class here.
+ * 
+ */
+
+public class drawing
+{
+    public static void main(String[] args)
+    {
+        System.out.println("@   @");
+        System.out.println("  m  ");
+        System.out.println("<___>");
+    }
+}
