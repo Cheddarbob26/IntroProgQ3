@@ -1,0 +1,30 @@
+import java.util. Scanner;
+/**
+ * @HLindblom
+ * 1/31/19
+ * This program prompts for three strings and then puts them in a println
+ * 
+ */
+
+public class PromptVariables
+{
+    public static void main(String[] args)
+    {
+      //Required line for input
+      Scanner in = new Scanner(System.in);
+      
+      //Prompts and entries for 3 variables
+      System.out.print("Enter your name : ");
+      String name = in.nextLine();
+      
+      System.out.print("Enter the day : ");
+      String day = in.nextLine();
+      
+      System.out.print("Enter the date : ");
+      String date = in.nextLine();
+      
+      //Output of all 3 strings
+      System.out.println("Hello, " + name + ", today is " + day + " and the date is " + date);
+      
+    }
+}
