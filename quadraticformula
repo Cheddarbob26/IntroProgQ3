@@ -1,0 +1,31 @@
+import java.util. Scanner;
+/**
+ * quadratic equation solver
+ * @cheddarbob26
+ * 2/7/2019
+ */
+
+public class quadraticformula
+{
+    public static void main(String[] args)
+    {
+      Scanner in = new Scanner(System.in);
+      // allows you to insert the values
+      System.out.print("Enter value for a : ");
+      
+      double a = in.nextDouble();
+      
+      System.out.print("Enter value for b : ");
+      
+      double b = in.nextDouble();
+      
+      System.out.print("Enter value for c : ");
+      
+      double c = in.nextDouble();
+      
+      System.out.println((-b + (Math.sqrt(Math.pow(b,2) - 4*a*c)))/(2*a));
+      // plus equation
+      System.out.println((-b - (Math.sqrt(Math.pow(b,2) - 4*a*c)))/(2*a));
+      // minus equation
+    }
+}
