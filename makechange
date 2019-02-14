@@ -1,0 +1,70 @@
+import java.util.Scanner;
+/**
+ * Write a description of your class here.
+ * 
+ */
+
+public class Makechange
+{
+    public static void main(String[] args)
+    {
+     Scanner in = new Scanner(System.in);
+     
+     System.out.println("Enter a dollar amount amount");
+     
+     int dollars = in.nextInt();
+     
+     int numTwenties = dollars/20;
+     
+     int afterTwenties = dollars%20;
+     
+     int numTens = afterTwenties/10;
+     
+     int afterTens = afterTwenties%10;
+     
+     int numFives = afterTens/5;
+     
+     int afterFives = afterTens%5;
+     
+     int numOnes = afterFives/1;
+     
+     int afterOnes = afterFives%1;
+     
+     System.out.println("Enter Cents amount");
+     
+     int cents = in.nextInt();
+     
+     int numQuarters = cents/25;
+     
+     int afterQuarters = cents%25;
+     
+     int numDimes = afterQuarters/10;
+     
+     int afterDimes = afterQuarters%10;
+     
+     int numNickels = afterDimes/5;
+     
+     int afterNickels = afterDimes%5;
+     
+     int numPennies = afterNickels/1;
+     
+     int afterPennies = afterNickels%1;
+     
+     System.out.println("There will be " + numTwenties + "twentie(s)");
+     
+     System.out.println("There will be " + numTens + "ten(s)");
+     
+     System.out.println("There will be " + numFives + "five(s)");
+     
+     System.out.println("There will be " + numOnes + " one(s)");
+     
+     System.out.println("There will be " + numQuarters + " quarter(s)");
+     
+     System.out.println("There will be " + numDimes + " dime(s)");
+     
+     System.out.println("There will be " + numNickels + " nickel(s)");
+     
+     System.out.println("There will be " + numPennies + " pennie(s)");
+        
+    }
+}
