@@ -1,0 +1,40 @@
+import java.util. Scanner;
+/**
+ * madlib
+ * @cheddarbob26
+ */
+
+public class madlibs
+{
+    public static void main(String[] args)
+    {
+     Scanner in = new Scanner(System.in);
+     
+      System.out.print("Enter a name : ");
+      String name = in.nextLine();
+      
+      System.out.print("Enter an animal : ");
+      String animal = in.nextLine();
+      
+      System.out.print("Enter a pet name : ");
+      String pet = in.nextLine();
+      
+      System.out.print("Enter a color : ");
+      String color = in.nextLine();
+      
+      System.out.print("Enter an action : ");
+      String action = in.nextLine();
+      
+      System.out.print("Enter a verb in the past tense : ");
+      String verb = in.nextLine();
+      
+      System.out.print("Enter an adverb : ");
+      String adverb = in.nextLine();
+      
+      System.out.print("Enter a number : ");
+      int number = in.nextInt();
+      
+      System.out.println("There once was a man named " + name + ", and he had a " + animal + " named " + pet + " whos scales were very " + color + ". He liked to " + action + " a lot, and when he did this " + adverb + " his heart rate " + verb + " and it went up to " + number + " beats per minute. He died");
+      
+    }
+}
