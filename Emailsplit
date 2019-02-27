@@ -1,0 +1,20 @@
+import java.util.Scanner;
+/**
+ * Write a description of your class here.
+ * 
+ */
+
+public class Emailprompt
+{
+    public static void main(String[] args)
+    {
+     Scanner in = new Scanner(System.in); 
+     System.out.println("Please enter your email address");
+     String emailAddress = in.next();
+     int loc = emailAddress.indexOf('@');
+     int len = emailAddress.length();
+     
+     System.out.println("The username is: " + emailAddress.substring(0,loc));
+     System.out.println("The domain is: " + emailAddress.substring(loc));   
+    }
+}
