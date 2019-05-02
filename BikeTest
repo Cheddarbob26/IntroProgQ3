@@ -1,0 +1,26 @@
+
+/**
+ * Write a description of your class here.
+ * 
+ */
+
+public class BikeTest
+{
+    public static void main(String[] args)
+    {
+        Bike b2 = new Bike("Fitbikeco.", 10.0, "freecoaster");
+        Bike b1 = new Bike("Hyper", 8.6, "cassette");
+
+        System.out.println("Bike Brand " + b1.getBrand());
+        System.out.println("Bar Height " + b1.getBarHeight());
+        System.out.println("Wheel Type " + b1.getWheelType());
+        
+        System.out.println("Bike Brand " + b2.getBrand());
+        System.out.println("Bar Height " + b2.getBarHeight());
+        System.out.println("Wheel Type " + b2.getWheelType());
+        b2.setBarHeight(9.5);
+        System.out.println("Bar Height " + b2.getBarHeight());
+        
+        System.out.println("Is bike 1 taller than bike 2?: " + Bike.isTaller(b1, b2));
+    }
+}
