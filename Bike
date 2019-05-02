@@ -1,0 +1,64 @@
+/**
+ * this class represents a Bike.
+ * 
+ */
+
+public class Bike
+{
+    private String brand;
+    private double barHeight;
+    private String wheelType;
+    
+    
+    
+    public Bike()
+    {
+        brand = "Cult";
+        barHeight = 0;
+        wheelType = "Cassette";
+    }
+    
+    
+    public Bike(String s, double b, String w)
+    {
+        brand = s;
+        barHeight = b;
+        wheelType = w;
+    }
+    
+    
+    public String getBrand()
+    {
+        return brand;
+    }
+    public double getBarHeight()
+    {
+        return barHeight;
+    }
+    public String getWheelType()
+    {
+        return wheelType;
+    }
+    
+    public void setBarHeight(double n)
+    {
+        barHeight = n;
+    }
+    
+    public String toString()
+    {
+        return "This bike is a " + brand + " and has a bar height of " + barHeight + " with a merritt " + wheelType;
+    }
+    
+    public static boolean isTaller(Bike b1, Bike b2)
+    {
+        if(b1.getBarHeight() > b2.getBarHeight())
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}
