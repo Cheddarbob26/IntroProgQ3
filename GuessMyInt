@@ -1,5 +1,3 @@
-
-
 /**
  * guess my int
  * @
@@ -11,7 +9,7 @@ public class GuessMyInt
     {
         Scanner in = new Scanner(System.in);
         
-        int correctNum = (int) Math.random() * 100 +1;
+        int correctNum = (int) (Math.random() * 100 +1);
         int numTries = 0;
         
         System.out.println("Guess a number between 1 and 100 pal");
@@ -24,16 +22,16 @@ public class GuessMyInt
             {
                 System.out.println("Too high");
                 System.out.println("Guess again.");
+                guess = in.nextInt();
             }
-            else if(guess > correctNum)
+            else if(guess < correctNum)
             {
                 System.out.println("Too low");
                 System.out.println("Guess again.");
-            }
-            else
-            {
-                System.out.println("Correctamundo!" + numTries + " tries!");
+                guess = in.nextInt();
             }
         }
+        numTries++;
+        System.out.println("Correctamundo!" + numTries + " tries!");
     }
 }
