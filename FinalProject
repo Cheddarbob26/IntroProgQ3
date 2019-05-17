@@ -1,0 +1,120 @@
+
+/**
+ * Final Project
+ * @cheddarbob26
+ */
+import java.util.Scanner;
+public class FinalProject
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        
+        System.out.println("Please enter your first name.");
+        String firstName = in.nextLine();
+        
+        System.out.println("Please enter your last name.");
+        String lastName = in.nextLine();
+        
+        System.out.println("Please enter the month (number).");
+        String month = in.nextLine();
+        
+        System.out.println("Please enter the calender day.");
+        int day = in.nextInt();
+        
+        System.out.println("Please enrter the year.");
+        int year = in.nextInt();
+        
+        System.out.println(firstName + " " + lastName);
+        System.out.println(month + "/" + day + "/" + year);
+        
+        System.out.println("Please enter a positive integer.");
+        double A = in.nextDouble();
+        
+        System.out.println("Gimme another one.");
+        double B = in.nextDouble();
+        
+        System.out.println("One more pal.");
+        double C = in.nextDouble();
+        
+        double S = (A + B + C)/2;
+        
+        double area = Math.sqrt(S * (S - A) * (S - B) * (S - C));
+        
+        double P = S * 2;
+        
+        System.out.println("Given a triangle with side lengths " + A + ", " + B + ", " + C + ", The Area is " + area + ", and the perimeter is " + P);
+        
+        System.out.println("Type three sentences, each ending in periods.");
+        String threeSentence = in.nextLine();
+        threeSentence = in.nextLine();
+        
+        int period1 = threeSentence.indexOf(".");
+        
+        String twoSentence = threeSentence.substring(period1);
+        
+        int period2 = twoSentence.indexOf(".",1 );
+        
+        String oneSentence = twoSentence.substring(period2);
+        
+        int period3 = oneSentence.indexOf(".",1);
+        
+        System.out.println("Given 3 sentences of any length as a single string, " + threeSentence + " The first sentence is " + period1 + " characters long, the second sentence is " + period2 + " characters long, and sentence three is " + period3 + " characters long.");
+        
+        System.out.println("Finally, please enter a dollar amount amount");
+        
+        int dollars = in.nextInt();
+     
+        int numTwenties = dollars/20;
+     
+        int afterTwenties = dollars%20;
+     
+        int numTens = afterTwenties/10;
+     
+        int afterTens = afterTwenties%10;
+     
+        int numFives = afterTens/5;
+     
+        int afterFives = afterTens%5;
+     
+        int numOnes = afterFives/1;
+     
+        int afterOnes = afterFives%1;
+     
+        System.out.println("Enter Cents amount");
+     
+        int cents = in.nextInt();
+     
+        int numQuarters = cents/25;
+     
+        int afterQuarters = cents%25;
+     
+        int numDimes = afterQuarters/10;
+     
+        int afterDimes = afterQuarters%10;
+     
+        int numNickels = afterDimes/5;
+     
+        int afterNickels = afterDimes%5;
+     
+        int numPennies = afterNickels/1;
+     
+        int afterPennies = afterNickels%1;
+     
+        System.out.println("There will be " + numTwenties + "twentie(s)");
+     
+        System.out.println("There will be " + numTens + "ten(s)");
+     
+        System.out.println("There will be " + numFives + "five(s)");
+     
+        System.out.println("There will be " + numOnes + " one(s)");
+     
+        System.out.println("There will be " + numQuarters + " quarter(s)");
+     
+        System.out.println("There will be " + numDimes + " dime(s)");
+     
+        System.out.println("There will be " + numNickels + " nickel(s)");
+     
+        System.out.println("There will be " + numPennies + " pennie(s)");
+    }
+}
