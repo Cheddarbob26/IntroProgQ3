@@ -1,0 +1,36 @@
+
+/**
+ * guess my int
+ * @
+ */
+import java.util.Scanner;
+public class GuessMyInt
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        
+        int correctNum = (int) Math.random() * 100 +1;
+        int numTries = 0;
+        
+        System.out.println("Guess a number between 1 and 100 pal");
+        int guess = in.nextInt();
+        
+        while(guess != correctNum)
+        {
+            numTries++;
+            if(guess > correctNum)
+            {
+                System.out.println("Too high");
+            }
+            else if(guess > correctNum)
+            {
+                System.out.println("Too low");
+            }
+            else
+            {
+                System.out.println("Correctamundo!" + numTries + " tries!");
+            }
+        }
+    }
+}
