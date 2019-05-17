@@ -1,4 +1,5 @@
 
+
 /**
  * guess my int
  * @
@@ -22,10 +23,12 @@ public class GuessMyInt
             if(guess > correctNum)
             {
                 System.out.println("Too high");
+                System.out.println("Guess again.");
             }
             else if(guess > correctNum)
             {
                 System.out.println("Too low");
+                System.out.println("Guess again.");
             }
             else
             {
