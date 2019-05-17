@@ -1,0 +1,37 @@
+
+/**
+ * This program calculates what grade you need to average between your quarter 4 and final grade in order to get your desired average, based on your grades in Q1, Q2, Q3, and midterm grade.
+ * @cheddarbob26
+ */
+import java.util.Scanner;
+public class GradeCalculator
+{
+    public static void main(String[] args)
+    {
+      Scanner in = new Scanner(System.in);
+      System.out.println("This program calculates what grade you need to average between your quarter 4 and final grade in order to get your desired average, based on your grades in Q1, Q2, Q3, and midterm grade.");
+      System.out.println("Please enter your q1 grade");
+      double q1 = in.nextDouble();
+      System.out.println("Please enter your q2 grade");
+      double q2 = in.nextDouble();
+      System.out.println("Please enter your q3 grade");
+      double q3 = in.nextDouble();
+      System.out.println("Please enter your midterm grade");
+      double midTerm = in.nextDouble();
+      System.out.println("What is the total average that you woud like to have? Please enter the number instead of a letter.");
+      double average = in.nextDouble();
+      double rawBase = ((q1 + q2 + q3) * 2) + midTerm;
+      double averageNeeded = (average * 10 - rawBase)/3;
+      System.out.println(averageNeeded);
+      double maxGrade = (rawBase + 300)/10;
+    
+      if(averageNeeded > 100)
+      {
+          System.out.println("Wow wow there brother wooooooow brother, you got too much dip on ya chip.");
+      }
+      else
+      {
+          System.out.println("The best total average you can get in this class is a(n) " + maxGrade + ", and you would need to average a 100 between your q4 and final assessmnet in order to get this average.");
+      }
+    }
+}
