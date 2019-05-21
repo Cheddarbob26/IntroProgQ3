@@ -18,7 +18,7 @@ public class GradeCalculator
       double q3 = in.nextDouble();
       System.out.println("Please enter your midterm grade");
       double midTerm = in.nextDouble();
-      System.out.println("What is the total average that you woud like to have? Please enter the number instead of a letter.");
+      System.out.println("What is the total average that you would like to have? Please enter the number instead of a letter.");
       double average = in.nextDouble();
       double rawBase = ((q1 + q2 + q3) * 2) + midTerm;
       double averageNeeded = (average * 10 - rawBase)/3;
@@ -31,7 +31,7 @@ public class GradeCalculator
       }
       else
       {
-          System.out.println("The best total average you can get in this class is a(n) " + maxGrade + ", and you would need to average a 100 between your q4 and final assessmnet in order to get this average.");
+          System.out.println("The best total average you can get in this class is a(n) " + maxGrade + ", and you would need to average a 100 between your q4 and final assessment in order to get this average.");
       }
     }
 }
