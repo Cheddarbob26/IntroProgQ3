@@ -1,0 +1,23 @@
+
+/**
+ * HELLOWORLD3
+ * @cheddarbob26
+ */
+import java.util.Scanner;
+public class HelloWorld3
+{
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Is this the world? true or false");
+        boolean isWorld = in.nextBoolean();
+        if(isWorld == true)
+        {
+            System.out.println("Hello world.");
+        }
+        else
+        {
+            System.out.println("Hello not world.");
+        }
+    }
+}
